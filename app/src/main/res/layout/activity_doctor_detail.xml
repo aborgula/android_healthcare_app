@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lekarka2"
+    android:foregroundTint="#000000"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="38dp"
+        android:fontFamily="@font/madimi"
+        android:text="24/7 Healthcare"
+        android:textColor="#DAD075"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/niramit"
+        android:text="Book Appointment"
+        android:textColor="@color/buttonpurple"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+
+
+        android:id="@+id/fullname"
+        android:layout_width="289dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded"
+        android:drawableLeft="@drawable/person"
+        android:drawablePadding="6dp"
+        android:fontFamily="@font/niramit"
+        android:hint="Full Name"
+        android:paddingStart="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+
+    <EditText
+
+        android:id="@+id/address"
+        android:layout_width="289dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded"
+        android:drawableLeft="@drawable/outline_home_24"
+        android:drawablePadding="6dp"
+        android:fontFamily="@font/niramit"
+        android:hint="Hospital Address"
+        android:inputType="textEmailAddress"
+        android:paddingStart="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fullname" />
+
+    <EditText
+
+
+        android:id="@+id/number"
+        android:layout_width="289dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded"
+        android:drawableLeft="@drawable/outline_local_phone_24"
+        android:drawablePadding="6dp"
+        android:fontFamily="@font/niramit"
+        android:hint="Contact number"
+        android:paddingStart="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address" />
+
+    <EditText
+
+
+        android:id="@+id/fees"
+        android:layout_width="289dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+
+        android:background="@drawable/rounded"
+        android:drawableLeft="@drawable/money"
+        android:drawablePadding="7dp"
+        android:fontFamily="@font/niramit"
+        android:hint="Fees"
+        android:inputType="textPersonName"
+        android:paddingStart="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number" />
+
+    <Button
+        android:id="@+id/bookbtn"
+        android:layout_width="289dp"
+        android:layout_height="45dp"
+        android:background="@drawable/radius"
+        android:backgroundTint="#9022156A"
+        android:fontFamily="@font/niramit"
+        android:text="book appointment"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectdatebtn"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="289dp"
+        android:layout_height="45dp"
+        android:background="@drawable/radius"
+        android:backgroundTint="#9022156A"
+        android:fontFamily="@font/niramit"
+        android:text="BACK"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookbtn"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <TextView
+        android:id="@+id/selectdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Select Date"
+        android:textColor="#FFE38F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fees" />
+
+    <TextView
+        android:id="@+id/selecttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Select Time"
+        android:textColor="#FFE38F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fees" />
+
+    <Button
+        android:id="@+id/selectdatebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/radius"
+        android:backgroundTint="#400F66D1"
+        android:paddingHorizontal="13dp"
+        android:text="27/10/2025"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectdate" />
+
+    <Button
+        android:id="@+id/selecttimebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/radius"
+        android:backgroundTint="#400F66D1"
+        android:paddingHorizontal="13dp"
+        android:text="16:30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fees" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
